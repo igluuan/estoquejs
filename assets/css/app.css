@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bgColor: #fcf2ff;
+    --bgColor2: #262727;
+    --blue1: #2196f3;
+    --blue2: #137fd9;
+    --orange1: #ff9800;
+    --orange2: #e28000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bgColor);
+    overflow: hidden;
+}
+
+.header {
+    background-color: var(--bgColor2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blue2);
+    border-bottom: 1px solid #ffffffad;
+    padding: 0 20px;
+}
+
+.titleHeader {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.userLogin {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+}
+
+.leftMenu {
+    background-color: var(--bgColor2);
+    width: 200px;
+    height: 100vh;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.options li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    gap: 3px;
+    background: linear-gradient(to left, var(--bgColor2) 50%, var(--blue2) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    padding-bottom: 5px;
+}
+
+.options li:hover {
+    background-position: left;
+}
+
+.options a {
+    font-size: 2em;
+    color: var(--bgColor);
+    text-decoration: none;
+    margin-top: 7px;
+}
+
+ion-icon {
+    color: var(--bgColor);
+    font-size: 3em;
+    padding: 5px;
+}
+
+.rightOptions {
+    padding: 10px;
+}
